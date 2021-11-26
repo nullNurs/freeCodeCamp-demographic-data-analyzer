@@ -73,8 +73,8 @@ def calculate_demographic_data(print_data=True):
                                         (df_IN['native-country']=='India')]
     highest_earning_occupations = highest_earning_occupations.drop(['salary'], axis=1)
     highest_earning_occupations = highest_earning_occupations.drop(['native-country'], axis=1)
+    
     temp_tuple = highest_earning_occupations.value_counts().idxmax()
-
     top_IN_occupation = ''.join(temp_tuple)
 
     # DO NOT MODIFY BELOW THIS LINE
